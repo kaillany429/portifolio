@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fcfcde;
+    color: #242424;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe8c9;
+    padding: 20px;
+    color: #242424;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eff3d8;
+    color: antiquewhite;
+    border: none;
+    cursor: auto;
+    color: #000000;
+    font-size: 15px;
+    height: 30%;
+    width: 30%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+
+header button {
+    background-color: #fcfcde;
+    color: #242424;
+    border: none;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    border-radius: 5px;
+    height: 20%;
+    width: 20%;
+}
+
+section {
+    padding: auto 20px;
+    margin: 20px auto;
+    height: 100vh;
+    width: 70%;
+}
+
+#sobre div {
+    width: 50%;
+}
+
+#sobre img {
+    height: 400px;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.projeto {
+    background-color: #e0e4c9;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* ----modo escuro---- */
+
+.dark-mode {
+    background-color: #000000;
+    color: #fcfcde;
+}
+
+.dark-mode header {
+    background-color: #272727;
+}
+
+.dark-mode header button {
+    background-color: #4b4b4b;
+    color: #faebd7;
+}
+
+.dark-mode h1 {
+    color: #fcfcde;
+}
+
+
+.dark-mode .projeto {
+    background-color: #585858;
+}
+
+@media(max-width:480px) {
+    #sobre img {
+        height: 200px;
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .projeto {
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .projeto p{
+        font-size: 20px;
+    }
+
+    #sobre {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    button {
+        height: 90px;
+        width: 90px;
+    }
+
+}
